@@ -1,0 +1,60 @@
+
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Servlet
+ */
+@WebServlet("/Servlet")
+public class Servlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	Usuario u1 = new Usuario("admin","admin");
+	Usuario u2 = new Usuario("usuario","contrasena")
+	ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
+	nombreArrayList.add("Elemento");
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Servlet() {
+        super();
+        // TODO Auto-generated constructor stub
+        
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		System.out.println("VERBO POST");
+		String usuario = request.getParameter("usuario");
+		String contrasena = request.getParameter("contrasena");
+		System.out.println(usuario);
+		System.out.println(contrasena);
+		RequestDispatcher rd;
+		if (usuario.equals("usuario") && contrasena.equals("contrasena")) {
+			System.out.println("Log-in");
+			rd = request.getRequestDispatcher("loginExitoso.jsp");
+			request.setAttribute("usuario",usuario);
+		} else {
+			rd = request.getRequestDispatcher("index.html");
+		}
+		
+		//Ejecutamos la accion de ir
+		rd.forward(request, response);
+		
+	}
+
+}

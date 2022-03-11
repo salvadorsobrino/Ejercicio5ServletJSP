@@ -1,0 +1,40 @@
+/* Hoja de estilo loginExitoso */
+h1{
+	 color: orange;
+}
+body{
+	background-color: rgb(255, 255, 128);
+    background-size: cover;
+}
+#contenido{
+	width: 20%;
+	background-color: white;
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	text-align: center;
+	margin-top: 10%;
+	margin-left: 30%;
+	padding: 5%;
+
+	
+}
+a:link {
+    /* Enlaces no visitados */
+    color: rgb(97, 0, 0);
+}
+
+a:visited {
+    /* Enlaces visitados */
+    color: rgb(97, 0, 0);
+}
+
+a:hover, a:focus {
+    color: rgb(153, 72, 6);
+    /* El usuario esta sobre el enlace */
+}
+
+a:active {
+    color: rgb(255, 94, 0);
+    /* El usuario hace click en el enlace */
+}

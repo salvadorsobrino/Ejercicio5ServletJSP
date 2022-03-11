@@ -1,0 +1,15 @@
+
+public class Usuario {
+	private String usuario;
+	private String contraseña;
+	
+	public Usuario() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [usuario=" + usuario + ", contraseña=" + contraseña + "]";
+	}
+	
+}

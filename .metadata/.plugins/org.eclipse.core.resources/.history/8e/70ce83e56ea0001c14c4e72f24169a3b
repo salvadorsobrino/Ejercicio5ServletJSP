@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="loginExitoso.jsp" method="post">
+	Usuario:
+	<input type="text" name="usuario">
+	<input type="password" name="contraseña">
+	
+	</form>
+</body>
+</html>

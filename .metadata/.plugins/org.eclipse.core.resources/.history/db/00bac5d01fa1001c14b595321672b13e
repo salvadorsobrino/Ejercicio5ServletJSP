@@ -1,0 +1,20 @@
+/* Hoja de estilo index */
+h1{
+	 color: orange;
+}
+body{
+	background-color: rgb(255, 255, 128);
+    background-size: cover;
+}
+#formulario{
+	background-color: rgb(255, 128, 64);
+	border-style: solid;
+	border-width: thin;
+	border-color: white;
+	width: 50%;
+	height: auto;
+	margin-top: auto;
+	text-align:center;
+	padding: 5%;
+	
+}

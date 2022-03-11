@@ -1,0 +1,30 @@
+/* Hoja de estilo index */
+h1{
+	 color: orange;
+}
+body{
+	background-color: rgb(255, 255, 128);
+    background-size: cover;
+}
+#formulario{
+	background-color: 
+}
+a:link {
+    /* Enlaces no visitados */
+    color: rgb(255, 128, 64);
+}
+
+a:visited {
+    /* Enlaces visitados */
+    color: rgb(255, 128, 0);
+}
+
+a:hover, a:focus {
+    color: rgb(153, 72, 6);
+    /* El usuario esta sobre el enlace */
+}
+
+a:active {
+    color: rgb(255, 94, 0);
+    /* El usuario hace click en el enlace */
+}

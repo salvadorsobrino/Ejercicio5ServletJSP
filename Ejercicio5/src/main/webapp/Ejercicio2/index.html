@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- El elemento HTML <head> provee información general (metadatos) acerca del documento, 
+        incluyendo su título y enlaces a scripts y hojas de estilos.-->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+
+    <title>Tesla Home</title>
+    <link rel="icon" href="tesla_icon.png">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+</head>
+
+<nav>
+    <img id="logo" src="logo.png">
+        <ul>
+            <li class="menu">
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="menu">
+                <a href="pedidos.html">Realizar Pedido</a>
+            </li>
+            <li class="menu">
+                <a href="noticias.html">Noticias</a>
+            </li>
+
+        </ul>
+
+</nav>
+
+<body>
+    <main>
+        <section>
+            <article id="articulo1">
+                <h2>Lista ordenada de coches</h2>
+                <ol id="lista">
+                    <li><b><a href="https://www.tesla.com/es_es/models/design#overview" target="_blank">Model S</a></b>
+                        <ul class="elementolista">
+                            <li>652km Autonomía</li>
+                            <li>250km/h Velocidad máxima</li>
+                            <li>3,2s 0-100 km/h</li>
+                        </ul>
+                    </li>
+                    <li><b><a href="https://www.tesla.com/es_es/model3/design#overview" target="_blank">Model 3</a></b>
+                        <ul class="elementolista">
+                            <li>491km Autonomía</li>
+                            <li>225km/h Velocidad máxima</li>
+                            <li>6,1s 0-100 km/h</li>
+                        </ul>
+                    </li>
+                    <li><b><a href="https://www.tesla.com/es_es/modelx/design#overview" target="_blank">Model X</a></b>
+                        <ul class="elementolista">
+                            <li>560km Autonomía</li>
+                            <li>250km/h Velocidad máxima</li>
+                            <li>3,9s 0-100 km/h</li>
+                        </ul>
+                    </li>
+                    <li><b><a href="https://www.tesla.com/es_es/modely/design#overview" target="_blank">Model Y</a></b>
+                        <ul class="elementolista">
+                            <li>553km Autonomía</li>
+                            <li>217km/h Velocidad máxima</li>
+                            <li>5,0s 0-100 km/h</li>
+                        </ul>
+                    </li>
+
+
+                </ol>
+            </article>
+            <article id="contendorImagen">
+                <img id="imagen" src="modelos.jpg">
+            </article>
+        </section>
+
+        <section id="precios">
+            <table id="tabla">
+                <caption id="cabeceratabla">
+                    <h2>Lista de precios</h2>
+                </caption>
+                <thead>
+                    <tr class="cuadrado">
+                        <th class="cuadrado">ModelS</th>
+                        <th class="cuadrado">Model3</th>
+                        <th class="cuadrado">ModelX</th>
+                        <th class="cuadrado">ModelY</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cuadrado">80.675€</td>
+                        <td class="cuadrado">46.990€</td>
+                        <td class="cuadrado">89.870€</td>
+                        <td class="cuadrado">64.000€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+<footer>
+    <img id="imagenfooter" src="tesla_icon.png">
+    <p id="pfooter">Todos los derechos reservados Tesla copyright 2022 &copy;</p>
+</footer>
+
+</html>

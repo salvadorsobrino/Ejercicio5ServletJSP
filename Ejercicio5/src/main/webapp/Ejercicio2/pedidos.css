@@ -1,0 +1,159 @@
+/* Hoja de estilo pedidos */
+
+* { /*Da bordes y coloca los elementos pegados a la ventana*/ 
+    /*outline: 1px solid rgb(255, 0, 0);*/
+     margin: 0; 
+     padding: 0;
+ }
+ 
+ nav{
+     position: fixed;
+     z-index: 1;
+     width: 100%;
+     height: auto;
+     background: linear-gradient(left, rgb(125, 0, 0), red, white);/* Para Firefox*/
+     background: -webkit-linear-gradient(left, rgb(125, 0, 0), red, white); /* Para Chromium*/
+     top: 0;
+     border-color: rgb(255, 0, 0);
+     border-style: solid;
+     border-width: thin;
+     
+     
+ }
+ nav::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+ #logo{
+     width: 8%;
+     float:left;
+     margin-top: 1px;
+     margin-bottom: 1px;
+     
+ }
+ .menu{
+     display: inline-block;
+     width: 15%;
+     border-color: rgb(255, 0, 0);
+     border-style: solid;
+     border-width: thin;
+     text-align: center;
+     padding-top: 2%;
+     padding-bottom: 2%;
+     margin-left: 1%;
+     margin-top: 3px;
+     box-shadow: 0px 0px 10px rgb(255, 0, 0);
+ }
+ a:link {
+     /* Enlaces no visitados */
+     color: rgb(255, 255, 255);
+ }
+ 
+ a:visited {
+     /* Enlaces visitados */
+     color: rgb(255, 255, 255);
+ }
+ 
+ a:hover,:focus           {
+     color: rgb(97, 0, 0);
+     /* El usuario esta sobre el enlace */
+ }
+ 
+ a:active {
+     color: rgb(255, 105, 105);
+     /* El usuario hace click en el enlace */
+ }
+ body{
+     position: relative;
+     margin-top: 150px;
+     width: 100%;
+     background-image: url("fondo.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+ 
+     font-family: 'Times New Roman';
+     color: white;
+ }
+ h2 {
+     font-variant: small-caps;
+     text-decoration: underline;
+     margin-left: 10px;
+}
+#formulario{
+    width: 100%;
+    margin-left: 1%;
+}
+#cuadro{
+    position: relative;
+    width: 90%;
+    margin-top: 20px;
+    
+}
+#finalformulario{
+    width: 100%;
+    margin-top: 10%;
+}
+#observaciones{
+    width: 50%;
+    resize: none;
+}
+.datospedido{
+    display: block;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#pfooter {
+    position: relative;
+    margin-left:20px;
+    padding-bottom: 20px;
+    width: 60%;
+    text-align: right;
+}
+
+#imagenfooter {
+    position: relative;
+    margin-right: 40%;
+    float:right
+}
+@media screen and (max-width: 1000px) {
+    nav {
+
+        background: linear-gradient(left, white, red, rgb(125, 0, 0));
+        /* Para Firefox*/
+        background: -webkit-linear-gradient(left, white, red, rgb(125, 0, 0));
+        /* Para Chromium*/
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    nav {
+
+        background: linear-gradient(left, rgb(125, 0, 0), red, white);
+        /* Para Firefox*/
+        background: -webkit-linear-gradient(left, rgb(125, 0, 0), red, white);
+        /* Para Chromium*/
+
+    }
+
+    #logo {
+        width: 80px;
+
+    }
+
+    .menu {
+        margin-top: 10px;
+        width: 80px;
+        font-size: 10px;
+
+    }
+}
